@@ -1,0 +1,53 @@
+.htmltag:before {content: "<";} 
+.htmltag:after {content: ">";} 
+.htmltag {color: #0000ff; 	padding: 0;}
+
+table.wikitableright {
+	float: right;
+	margin: 1em;
+	margin-right: 0.5em;
+
+}
+.Infobox {
+	border: 1px solid #1678a5;
+	background-color: #f0f0f0;
+	float: right;
+	width: 20em;
+	margin-left: 1em;
+	font-size: 80%;
+}
+.Infobox dl {
+	padding: 0.3em;
+}
+/*
+.Infobox dt, .Infobox dd {
+	display: inline;
+}
+.Infobox dt:before { content: ''; display: table; }
+.Infobox dd:before { content: ''; display: table; }
+*/
+.Infobox dt {
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+.Infobox dt:after {
+	content: ': ';
+}
+.Infobox dd {
+	padding: 0;
+	margin: 0;
+	margin-left: 8em; 
+}
+
+.Infoboxheader {
+	font-weight: bolder;
+	color: #fff;
+	background-image: url(img/header180x30.png);
+	background-position: center;
+	background-size: 100%;
+	min-height: 20px;
+	padding:  2px; 
+	padding-left:  0.5em;
+    margin: 0;
+}

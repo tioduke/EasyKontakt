@@ -1,0 +1,192 @@
+/* Menu / Infoboxen
+*/
+.menuoben {
+	position: absolute;
+    vertical-align: middle;
+	left: 20px;
+	top: 90px;
+    height: 30px;
+	margin: 0;
+	padding: 0;
+}
+.menuoben a {
+	background-repeat: no-repeat;
+	text-decoration: none; 
+	background-color: #ddd;
+	color: #1678a5;
+	border: 1px solid #1678a5;
+/*	display: block;*/
+	padding:  2px;
+	margin: 0;
+	padding-right: 25px;
+    width: 100px;
+}
+.menuoben a:hover {
+	color: #fff;
+	background-color: #23aff7;
+}
+.menuoben .selected {
+	background-image: url(img/dialog-ok-apply.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-color: #1678a5;
+	color: #fff;
+}
+.menuoben b {
+	color: #fff;
+	background-color: #87a3e2;
+}
+
+.menubox {
+	background-color: #f8f8f8;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #1678a5;
+}
+.menu br {
+	display: none;
+}
+.list br {
+	display: none;
+}
+.menuheader {
+	font-weight: bolder;
+	color: #fff;
+	background-image: url(img/header180x30.png);
+	background-position: center;
+	background-size: 100%;
+	height: 20px;
+	padding:  2px;
+	padding-left:  0.5em;
+    margin: 0;
+}
+.menuheader:before {
+	content: '  ';
+}
+.menufooter {
+    font-weight: bolder;
+	color: #fff;
+	background-image: url(img/header180x30.png);
+	background-position: center;
+	background-size: 100%;
+	height: 5px;
+}
+.menuspace {
+	height: 5px;
+}
+.menu_left {
+	position: absolute;
+	left: 5px;
+	top: 120px;
+	margin: 0;
+	padding: 0;
+	width: 180px;
+}
+.menu_right {
+	position: fixed;
+	right: 5px;
+	margin: auto;
+	top: 120px;
+	width: 180px;
+}
+/* Inhalt der Einzelnen Boxen
+*/
+.news {
+	margin: 0.2em;;
+}
+.news h4 {
+    margin: 0;
+	padding: 0;
+}
+.news ul {
+    margin: 0;
+    padding-left: 1.2em;
+}
+.icon {
+	width: 22px;
+	height: 22px;
+	padding: 2px;
+}
+.menu img {
+	border: none;
+	vertical-align: middle;
+}
+
+
+.menu, #list {
+	padding: 0;
+	line-height: 130%;
+}
+.menu ul {
+	margin: 0 0 0 0em;
+	padding:  0 0 0 0em;
+	border-top: 1px solid #1678a5;
+}
+.menu div {
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #1678a5;
+}
+.menu a {
+	background-repeat: no-repeat;
+	text-decoration: none; 
+	color:  #1678a5;
+	display: block;
+	padding:  0;
+	margin: 0;
+}
+.menu a:hover {
+	color: #fff;
+	background-color: #1678a5;
+}
+.menu .selected {
+	background-image: url(img/selected.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.menu b {
+	color: #fff;
+	background-color: #87a3e2;
+}
+.list {
+	margin: 0;
+	padding: 0;
+}
+.list ol, .list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-left: 0.2em;
+	border-bottom: 1px solid #222;
+}
+.list ol ol, .list ul ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-left: 0.7em;
+}
+.list li {
+	padding: 0;
+	margin: 0;
+}
+.list a[href] {
+	background-repeat: no-repeat;
+	text-decoration: none; 
+	color:  #1678a5;
+	background-color: #f8f8f8;
+	border-width: 0;
+	display: block;
+	padding:  0;
+	padding-left: 3px;
+	margin: 0;
+}
+.list a[href]:hover {
+	color: #fff;
+	background-color: #1678a5;
+	border-width: 0;
+}
+.list img {
+	border: none;
+	vertical-align: middle;
+	margin: 1px;
+}

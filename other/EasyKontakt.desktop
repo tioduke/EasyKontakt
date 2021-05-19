@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=0.1.20
+Name=EasyKontakt
+Comment=VCard Kontakte verwalten
+Exec=EasyKontakt %F
+Icon=EasyKontakt
+Terminal=false
+Type=Application
+Categories=Office;
+Name[de_DE]=EasyKontakt

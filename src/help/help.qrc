@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/whelp">
+        <file>go-home.png</file>
+        <file>go-next.png</file>
+        <file>go-previous.png</file>
+    </qresource>
+</RCC>

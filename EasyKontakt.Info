@@ -1,0 +1,13 @@
+MainWindow
+- VCardEditor
+	- VCard
+	- VCardList
+		- QList vCards
+			- QList vCardItems
+	- QList VCardItemDefines
+	- QList vCardWidgets  ( die aktuell geöffnete VCard )
+		- NameWidget
+		- AdrWidget
+		- DateWidget
+		- FotoWidget
+xxxxx

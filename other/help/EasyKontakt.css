@@ -1,0 +1,166 @@
+/* Damit diese StyleSheet Datei unwirksam wird, kann bis auf die beiden ersten Zeile alles gelöscht werden */
+/* Wenn diese Datei komplett gelöscht wird, wird eine neue StyleSheet Datei erstellt */
+/*
+Die nachfolgenden Farbzuweisungen sind nicht Qt StyleSheet konform
+Deshalb sind sie hier im Bereich untergebracht der eigentlich ein Kommentarberfeich ist.
+
+QPalette {
+    HIGHLIGHT: #5397ad;
+    HIGHLIGHTEDTEXT: #ffffff;
+    ALTERNATEBASE: #e8f0ff;
+}
+Hier wurden die Farbnamen die für die Qt-Programmierung notwendig sind benutzt
+In diesem SytleSheet muss teilweise ein Bindestrich (-) eingefügt werden
+siehe ganz unten
+*/
+
+QListView::item:alternate {
+    background: palette(alternate-base);
+}
+QListView::item:selected {
+        background-color: palette(highlight);
+        color: palette(highlighted-text);
+}
+*::item:selected {
+        background-color: palette(highlight);
+        color: palette(highlighted-text);
+}
+QLabel#labelEditLabel {
+    margin: 0px;
+    margin-left: 1px;
+    font: 10px;
+}
+NameWidget {
+    margin: 1px;
+    background-color: palette(highlight);
+    color: palette(highlighted-text);
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+NameWidget QLabel {
+    color: palette(highlighted-text);
+}
+NameWidget QLabelEdit {
+    background-color: palette(light);
+}
+QLineEdit:read-only {
+    background-color: palette(button);
+}
+VCardWidget {
+    padding-bottom: 2px;
+}
+QFrame#frameToolButton {
+    border: 0px;
+}
+QToolButton {
+        margin: 0px;
+        padding: 3px;
+        background-color: transparent;
+        border: 0px;
+}
+QxxAbstractSpinBox {
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+    border: 5px;
+}
+QToolButton:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 palette(light), stop: 1 palette(dark));
+    /*color: palette(highlighted-text);*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: palette(shadow);
+    border-radius: 8px;
+}
+QToolButton#labelEditWidget {
+    border-radius: 4px;
+}
+QToolButton#selectButton {
+    width: 16px;
+    height: 16px;
+}
+QSpinBox,QDateTimeEdit {
+    width: 150px;
+}
+QTabBar::tab:selected {
+    padding: 5px;
+    border: 2px solid palette(dark);
+    border-top: 5px solid palette(highlight);
+    border-bottom: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+QCheckBox  {
+        margin: 0px;
+        padding: 0px;
+}
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+QCheckBox::indicator:checked {
+    image: url(:/img/img/lchecked-blue.png);
+}
+QCheckBox::indicator:unchecked {
+    image: url(:/img/img/unchecked.png);
+}
+QCheckBox::indicator:indeterminate {
+     image: url(:/img/img/lchecked-blue.png);
+}
+CheckList QCheckBox::indicator:checked {
+    image: url(:/img/img/lchecked-red.png);
+}
+QCheckBox::indicator {
+    width: 20px;
+    height: 20px;
+}
+QFrame#frameTristate {
+    background-color: palette(alternate-base);
+    border: 1px solid palette(shadow);
+}
+QListView::indicator:checked {
+    image: url(:/img/img/lchecked-blue.png);
+}
+QListView::indicator:unchecked {
+    image: url(:/img/img/unchecked.png);
+}
+QFrame#frameLeft {
+    border: 0px;
+    border-top: 1px solid palette(dark);
+    border-right: 1px solid palette(dark);
+}
+QFrame#frameRight {
+    border: 0px;
+    border-left: 1px solid palette(dark);
+}
+/*
+ImageButton:hover {
+    background-color: palette(highlight);
+    border: 2px solid palette(highlight);
+}
+*/
+/*
+    ! Achtung das "-" Zeichen bei palette() beachten
+
+    HIGHLIGHTEDTEXT: #ffffff;
+    palette(highlighted-text)
+
+    PaletteRole für StyleSheet
+        alternate-base
+        base
+        bright-text
+        button
+        button-text
+        dark
+        highlight
+        highlighted-text
+        light
+        link
+        link-visited
+        mid
+        midlight
+        shadow
+        text
+        window
+        window-text
+*/

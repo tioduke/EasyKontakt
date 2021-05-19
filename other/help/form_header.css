@@ -1,0 +1,66 @@
+/* Bereich des Headers
+*/
+/* margin: top right bottom left;
+*/
+.header_backgnd {
+	position: absolue;
+	margin: 5px 5px 0 5px;
+    padding: 0;	
+}
+.header_backgnd img{
+	width: 100%;
+    height: 90px;
+}
+.header_logo {
+	color: #fff;
+	position: absolute;
+	left: 15px;
+	top: 5px;
+}
+.header_logo img {
+    height: 80px;
+    width: auto;
+}
+.title {
+	color: #fff;
+	position: absolute;
+	left: 200px;
+	top: 15px;
+	font-size: 140%;
+	font-weight: bolder;
+}
+.title img {
+	height: 25px;
+	width: auto;
+	vertical-align: middle;
+}
+
+.subtitle {
+	color: #fff;
+	position: absolute;
+	left: 200px;
+	top: 40px;
+} 
+.slogan {
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	top: 80px;
+	font-size: 70%;
+} 
+.homelink a{
+	color: #fff;
+	align: right;
+	position: absolute;
+	right: 20px;
+	top: 27px;
+	font-size: 180%;
+	font-variant: small-caps;
+	text-decoration: none;
+	font-weight: bolder;
+	letter-spacing: 0.1em;
+}
+.homelink a:hover {
+	color: #1678a5;
+	background-color: #fff;
+}

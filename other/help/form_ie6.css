@@ -1,0 +1,15 @@
+body {
+	position: static;
+	margin: 0;
+	margin-top: 5px; 
+    padding: 0;	
+}
+#header_logo img {
+    width: 60px;
+}
+#title img {
+	width: 25px;
+}
+#menu_right {
+	position: absolute;
+}

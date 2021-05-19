@@ -1,0 +1,17 @@
+USERFILENAME=/home/ichbins/source/cpp/easykontakt-0.1/bin/kontakte.vcf
+USERFILEFILTER=
+ITEMS=Adresse;Bild;Ereignis;Geburtstag;Jahrestag;Notiz;Organisation;Spitzname;Telefonnummer;URL
+REQUIREDITEMS=Telefonnummer
+Andreas Hofer
+Charles de Gaulle
+Freddie Mercury
+Georg Friedrich Händel
+George Washington
+Hinz und Kunz
+Johann Wolfgang Goethe
+Johannes Bückler
+Max und Moritz
+Pumuckel
+Salvatore Dali
+Wilhelm Busch
+Wilhelm Tell

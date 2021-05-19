@@ -1,0 +1,156 @@
+body {
+	position: relative;
+	margin: auto;
+	padding: 5px 0 0 0 ;
+	font-family: "Nimbus Sans L", "DejaVu Sans", Arial, Lucida,  Helvetica,sans-serif;
+	font-size: 90%;
+	background-color: #f0f0f0 ;
+	height: 100%;
+	color: #333;
+}
+.frame {
+    padding: 0;
+	background-color: #f0f0f0;
+}
+.content {
+	position: absolute; 
+	right: 190px;
+	left: 5px;
+    top: 120px;
+	overflow: auto;
+}
+.content {
+	margin-top: 0.2em;
+	padding: 0.5em;
+	padding-left: 1em;
+	background-color: #f8f8f8;
+	border: 1px solid #1678a5;
+}
+.content div {
+}
+
+.content ul {
+    margin: 0em;
+    padding-left: 1.2em;
+}
+.content ol {
+    margin: 0em;
+    padding-left: 1.2em;
+}
+.content dl {
+	margin: 0;
+    padding: 0;
+	font-weight: bold;
+}
+.content dd {
+    padding: 0;
+	padding-left: 1.2em;
+    margin: 0;
+	font-weight: normal;
+}
+
+.content img {
+	vertical-align: middle;
+}
+.content a[href] {
+	text-decoration: none; 
+	color: #1678a5;
+	padding: 0;
+	padding-left: 3px;
+	padding-right: 3px;
+	margin: 0;
+}
+.content a[href]:hover {
+	color: #fff;
+	background-color: #1678a5;
+}
+h1, h2, h3 {
+	margin-top: 0.8m;
+	margin-bottom: 0.4em;
+	border-bottom: 2px solid #1678a5;
+    clear: both;
+}
+h3 {
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+	border-bottom: 1px solid #1678a5;
+}
+h4, h5 {
+	margin-top: 0.4em;
+	margin-bottom: 0.2em;
+	border-bottom: 1px dotted #1678a5;
+    clear: both;
+}
+test {
+	font-size: 90%;
+	font-size: 115%;
+}
+.content pre, .content #highlight {
+	margin: 0.2em;
+	padding: 0.2em;
+	background-color: #e8e8e8;
+	font-size: 110%;
+	color: #000000;
+	border: 1px solid #1678a5;
+}
+.content pre {
+	overflow: auto;
+}
+div.highlight1, div.gray {
+	margin: 0.2em;
+	padding: 0.2em;
+	background-color: #e8e8e8;
+	border: 1px solid #1678a5;
+	color: #000000;
+}
+div.highlight2, div.info {
+	margin: 0.2em;
+	padding: 0.2em;
+	background-color: #bbffbb ; 
+	border: 1px solid #1678a5;
+	color: #000000;
+}
+div.highlight3, div .warning {
+	margin: 0.2em;
+	padding: 0.2em;
+	background-color: #ffffbb;
+	border: 1px solid #1678a5;
+	color: #000000;
+}
+div.highlight4, div.error {
+	margin: 0.2em;
+	padding: 0.2em;
+	background-color: #ffbbbb;
+	border: 1px solid #1678a5;
+	color: #000000;
+}
+.content table {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content caption {
+	font-weight: bold;
+	color: #1678a5;
+}
+.content th {
+	border: 1px solid #1678a5;
+	background-color: #1678a5;
+	color: #fff;
+    padding: 0.2em;;
+	margin: 1px;
+}
+.content table, .content td {
+	border: 1px solid #1678a5;
+	background-color: #f0f0f0;
+    padding: 0.2em;;
+}
+img.button  {
+	height: 18px;
+	background-color: #c0c0c0;
+	vertical-align: middle;
+	padding: 0.2em;;
+	border: 1px solid #a0a0a0;
+	border-top: 1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0;
+}

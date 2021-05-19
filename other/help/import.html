@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de" dir="ltr">
+      <head>
+            <meta name="author" content="SigVDR" />
+            <meta name="description" content="EasyKontakt - Kontaktverwaltung f&#252;r Linux. - <br />
+            Kontakte verwalten - f&#252;r Smartphone(Android), Fritz.Box, Thunderbird ..." />
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="content-language" content="de" />
+            <meta name="generator" content="EasyWebitor by SigVDR" />
+            <meta name="robots" content="all" />
+            <meta name="date" content="2013-10-08T06:34:45+0100" />
+            <meta name="keywords" content="EasyKontakt - Kontaktverwaltung f&#252;r Linux. Smartphone Android Fritzbox Thunderbird VCard Kontakte" />
+            <title>EasyKontakt - Kontaktverwaltung f&#252;r Linux.</title>
+            <link rel="stylesheet" type="text/css" href="form.css" />
+            <link rel="stylesheet" type="text/css" href="form_header.css" />
+            <link rel="stylesheet" type="text/css" href="form_menu.css" />
+            <link rel="stylesheet" type="text/css" href="form_vorlagen.css" />
+            <!--[if lt IE 7]>
+            <link rel="stylesheet" type="text/css" href="form_ie6.css" />
+            <![endif]-->
+            <style type="text/css">
+            </style>
+      </head>
+      <body>
+            <div class="frame">
+                  <div class="header_backgnd">
+                        <img src="img/header.png" />
+                        <div class="header_logo">
+                              <img src="img/easykontakt.png" />
+                        </div>
+                        <div class="title">
+                              <img src="img/e.png">asyKontakt
+                        </div>
+                        <div class="subtitle">
+                              <br />
+                              Kontakte verwalten - f&#252;r Smartphone(Android), Fritz.Box, Thunderbird ...
+                        </div>
+                        <div class="slogan">
+                              Free Cross Platform Development
+                        </div>
+                        <div class="homelink">
+                              <a href="http://www.sigvdr.de/Software/EasyKontakt/EasyKontakt.html">SigVDR</a>
+                        </div>
+                  </div>
+                  <div class="menuoben">
+                        <a  href="EasyKontakt.html"><img src="img/blind.gif" width = "0" height="10">EasyKontakt</a>
+                        <a  href="export.html"><img src="img/blind.gif" width = "0" height="10">Export</a>
+                        <a class="selected" href="import.html"><img src="img/blind.gif" width = "0" height="10">Import</a>
+                  </div>
+                  
+                  <div>
+                        <div class="content">
+                              
+                              EasyKontakt kann Telefon/Adressb&#252;cher aus anderen Programmen importieren, die nicht dem vCard Standard entsprechen.
+                              <br />
+                              <br />
+                              <h2><a name="Zwischenablage">Zwischenablage</a></h2>
+                              Das VCard Format ist als standardisierte Schnittstelle zum Datenaustauch konzipiert. Deshalb eignet es sich auch dazu Kontaktdaten zwischen Programmen per Kopieren und Einf&#252;gen &#252;ber die Zwischenablage des Betriebssystems auszutauschen.
+                              <br />
+                              <h2><a name="Fritz.Box">Fritz.Box</a></h2>
+                              Das Telefonbuch einer Fritz.Box kann in einem XML Dateiformat gesichert werden. F&#252;r dieses Fritz.Box XML Format ( getestet mit Fritz.Box 7170 und Fritz.Box 7270 ) enth&#228;lt EasyKontakt ein Importmodul.
+                              <br />
+                              <h2><a name="Thunderbird E-Mail">Thunderbird E-Mail</a></h2>
+                              Das Thunderbird Adressbuch kann auf verschiedene Arten exportiert werden. In EasyKotakt ist ein Importmodul f&#252;r eine <b>Komma getrennte</b> CSV Datei.
+                              <br />
+                              Diese CSV Datei enth&#228;lt in des ersten Zeile die "&#220;berschriften" zu den einzelnen Datenfeldern. Eine Zuordnung der &#220;berschriften zu den im VCard Standard definierten Datenfeldern erfolgt in der Konfigurationsdatei <b>thunderbird.def</b> aus der hier ein kleiner Auszug folgt.
+                              <br />
+<pre>
+Vorname=N:1 
+Nachname=N:0:END
+Anzeigename=FN
+Spitzname=?
+Prim&#228;re E-Mail-Adresse=EMAIL:PREF
+Sekund&#228;re E-Mail-Adresse=EMAIL
+Messenger-Name=?
+Tel. dienstlich=TEL:WORK
+Tel. privat=TEL:HOME
+Fax-Nummer=FAX
+</pre>
+                              Als Beispiel nehmen wir die Zeile <b>Nachname=N:0:END</b>
+                              <br />
+                              <dl>
+                                    <dt>Nachname</dt>
+                                    <dd>Das ist die &#220;berschrift aus der CSV Datei von Thunderbird</dd>
+                                    <dt>N</dt>
+                                    <dd>Das VCard Datenfeld f&#252;r den Namen</dd>
+                                    <dt>0</dt>
+                                    <dd>VCard definiert f&#252;r den Namen 5 Einzelfelder, Die Position <b>"0"</b> entspricht dem Nachnamen</dd>
+                                    <dt>END</dt>
+                                    <dd>Dies markiert das letzte Einzelfeld aus den Datenfeld N wie Name</dd>
+                              </dl>
+                              <br />
+                              Durch diese flexible Zuordnung kann das Importmodul von EasyKontakt leicht auf &#196;nderungen in der CSV Datei angepasst werden, wie z.B. dann wenn Thunderbird in einer anderen Landessprache benutzt wird.
+                              <br />
+                        </div>
+                        <div class="menu_right">
+                              
+                              <div class="menubox">
+                                    <div class="menuheader">
+                                          Inhalt dieser Seite
+                                    </div>
+                                    <div class="list">
+                                          <a href="import.html"><img src="img/blind.gif" width="0" height="10">Top</a>
+                                          <a href="#Zwischenablage"><img src="img/blind.gif" width="0" height="10">Zwischenablage</a>
+                                          <a href="#Fritz.Box"><img src="img/blind.gif" width="0" height="10">Fritz.Box</a>
+                                          <a href="#Thunderbird E-Mail"><img src="img/blind.gif" width="0" height="10">Thunderbird E-Mail</a>
+                                    </div>
+                                    <div class="menufooter">
+                                          <!--  lass die Zeile drin f&#252;r IE6 -->
+                                    </div>
+                              </div>
+                              
+                              08.10.2013 - 08:34:45<br />
+                              Created by EasyWebitor
+                              
+                        </div>
+                  </div>
+            </div>
+      </body>
+</html>
