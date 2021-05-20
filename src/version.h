@@ -1,1 +1,1 @@
-static QString VERSION = "0.2.5";
+static QString VERSION = "0.2.8";
