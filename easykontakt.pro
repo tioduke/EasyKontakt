@@ -181,7 +181,7 @@ langrel.CONFIG += no_link
 QMAKE_EXTRA_COMPILERS += langrel
 PRE_TARGETDEPS += $$TRANSLATIONS_OUT
 
-translations.files = $$TRANSLATION_TARGET_DIR/*.qm
+translations.files = $$TRANSLATIONS_OUT
 translations.CONFIG = no_check_exist
 
 
