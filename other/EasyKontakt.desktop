@@ -1,10 +1,12 @@
 [Desktop Entry]
-Version=0.1.20
+Type=Application
 Name=EasyKontakt
-Comment=VCard Kontakte verwalten
+Name[de_DE]=EasyKontakt
+Name[en_US]=EasyKontakt
+Comment=Manage VCard contacts
+Comment[de_DE]=VCard Kontakte verwalten
+Comment[en_US]=Manage VCard contacts
 Exec=EasyKontakt %F
 Icon=EasyKontakt
 Terminal=false
-Type=Application
-Categories=Office;
-Name[de_DE]=EasyKontakt
+Categories=Office;ContactManagement;

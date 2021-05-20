@@ -83,9 +83,6 @@ TEMPLATE = app
 
 DESTDIR = bin
 
-TRANSLATIONS += other/help/EasyKontakt.de_DE.ts \
-    other/help/EasyKontakt.en_US.ts
-
 SOURCES += src/main.cpp\
     src/mainwindow.cpp \
     src/aboutbox.cpp \
@@ -153,12 +150,39 @@ FORMS    += src/ui/mainwindow.ui \
     src/help/help.ui
 
 OTHER_FILES += \
-    other/help/EasyKontakt.ts \
     other/help/EasyKontakt.css \
     other/help/thunderbird.def \
     other/help/VCardItems.conf \
     other/VCardItems.conf \
     other/EasyKontakt.css
+
+
+# compile the translation files
+
+TRANSLATIONS = \
+    i18n/EasyKontakt.de_DE.ts \
+    i18n/EasyKontakt.en_US.ts
+
+TRANSLATION_TARGET_DIR = bin
+TRANSLATIONS_OUT = \
+    $$TRANSLATION_TARGET_DIR/EasyKontakt.de_DE.qm \
+    $$TRANSLATION_TARGET_DIR/EasyKontakt.en_US.qm
+
+isEmpty(QMAKE_LRELEASE) {
+    win32:LANGREL = $$[QT_INSTALL_BINS]\lrelease.exe
+    else:LANGREL = $$[QT_INSTALL_BINS]/lrelease
+}
+langrel.input = TRANSLATIONS
+langrel.output = $$TRANSLATION_TARGET_DIR/${QMAKE_FILE_BASE}.qm
+langrel.commands = \
+    $$LANGREL -compress -nounfinished -removeidentical ${QMAKE_FILE_IN} \
+          -qm $$TRANSLATION_TARGET_DIR/${QMAKE_FILE_BASE}.qm
+langrel.CONFIG += no_link
+QMAKE_EXTRA_COMPILERS += langrel
+PRE_TARGETDEPS += $$TRANSLATIONS_OUT
+
+translations.files = $$TRANSLATION_TARGET_DIR/*.qm
+translations.CONFIG = no_check_exist
 
 
 unix:!macx {
@@ -168,13 +192,14 @@ unix:!macx {
  desktop.path +=  /usr/share/applications
  icon.path +=  /usr/share/pixmaps
  target.path +=  /usr/bin/
+ translations.path += /usr/share/EasyKontakt/
  helpfiles.files +=  other/help/*
  conffiles.files +=  other/VCardItems.conf
  helpfiles.files +=  other/example.vcf
  logofiles.files += other/logos/*
  desktop.files +=  other/EasyKontakt.desktop
  icon.files +=  other/*.png
- INSTALLS +=  target  conffiles helpfiles  desktop  icon logofiles
+ INSTALLS +=  target  conffiles helpfiles  desktop  icon logofiles translations
 }
 
 DISTFILES +=

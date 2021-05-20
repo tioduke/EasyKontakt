@@ -31,10 +31,14 @@
 *.out
 *.app
 
-bin\
-buildQt5\
-install\
-Makefile
+# ignore the following directories
+.qm/
+bin/
+buildQt5/
+install/
+
+# ignore make files
 .qmake.stash
+Makefile
 qrc_help.cpp
 qrc_images.cpp
