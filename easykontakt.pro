@@ -83,7 +83,8 @@ TEMPLATE = app
 
 DESTDIR = bin
 
-TRANSLATIONS += other/help/EasyKontakt.ts
+TRANSLATIONS += other/help/EasyKontakt.de_DE.ts \
+    other/help/EasyKontakt.en_US.ts
 
 SOURCES += src/main.cpp\
     src/mainwindow.cpp \

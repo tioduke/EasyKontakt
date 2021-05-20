@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+bin\
+buildQt5\
+install\
+Makefile
+.qmake.stash
