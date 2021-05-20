@@ -36,3 +36,5 @@ buildQt5\
 install\
 Makefile
 .qmake.stash
+qrc_help.cpp
+qrc_images.cpp
