@@ -204,7 +204,7 @@ void QLabelEdit::setText(QString text){
         while ( !dateFormat.isEmpty() ) {
             dateFormat = vCardDateFormat(index++);
             QDateTime datetime = QDateTime::fromString(text,dateFormat);
-            if ( datetime.isValid() ) {
+            if ( datetime.isValid() || datetime == QDateTime.currentDateTime() ) {
                 dtEdit->setDate(datetime.date());
                 break;
             }
