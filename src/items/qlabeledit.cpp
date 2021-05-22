@@ -235,9 +235,9 @@ QString QLabelEdit::text(void){
     case DateEditType:  {
         QString format = vCardDateFormat(0);
         if ( format.isEmpty() ) {
-            return dtEdit->date().toString("yyyyMMdd");
+            return dtEdit->dateTime().toString("yyyyMMdd");
         } else {
-            return dtEdit->date().toString(format);
+            return dtEdit->dateTime().toString(format);
         }
     }
     case TimeEditType:     return dtEdit->time().toString("hhmmss");
