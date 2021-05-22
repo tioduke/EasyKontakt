@@ -160,13 +160,13 @@ OTHER_FILES += \
 # compile the translation files
 
 TRANSLATIONS = \
-    i18n/EasyKontakt.de_DE.ts \
-    i18n/EasyKontakt.en_US.ts
+    i18n/EasyKontakt_de_DE.ts \
+    i18n/EasyKontakt_en_US.ts
 
 TRANSLATION_TARGET_DIR = bin
 TRANSLATIONS_OUT = \
-    $$TRANSLATION_TARGET_DIR/EasyKontakt.de_DE.qm \
-    $$TRANSLATION_TARGET_DIR/EasyKontakt.en_US.qm
+    $$TRANSLATION_TARGET_DIR/EasyKontakt_de_DE.qm \
+    $$TRANSLATION_TARGET_DIR/EasyKontakt_en_US.qm
 
 isEmpty(QMAKE_LRELEASE) {
     win32:LANGREL = $$[QT_INSTALL_BINS]\lrelease.exe

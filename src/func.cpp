@@ -33,10 +33,10 @@ void setVCardDateFormat(QString format) {
 
 /*
 Unter Linux wird das Programm üblicherweise nach /usr/bin bzw.  /usr/local/bin installiert.
-Die Hilfedateien und Übersetzungsdateien liegen dann unter /usr/share/QMediaOrg bzw. /usr/local/share/QMediaOrg 
-Deshalb wird hier (relativ zum Programmordner) der Doc_Path auf ../share/QMediaOrg gesetzt. 
-Sollte dieser Ordner dann nicht vorhanden sein, wird wie unter Windows ein untergeordneter Ordner namens 
-./help angenommen 
+Die Hilfedateien und Übersetzungsdateien liegen dann unter /usr/share/QMediaOrg bzw. /usr/local/share/QMediaOrg
+Deshalb wird hier (relativ zum Programmordner) der Doc_Path auf ../share/QMediaOrg gesetzt.
+Sollte dieser Ordner dann nicht vorhanden sein, wird wie unter Windows ein untergeordneter Ordner namens
+./help angenommen
 */
 /*
 Unter Linux wird das Programm üblicherweise nach /usr/bin bzw.  /usr/local/bin installiert.
@@ -89,7 +89,7 @@ QString findDocPath(QString binPath){
     if (helpPath.exists() ) {
         docPath = path+"/";
         logoPath = docPath+"logos/";
-        iniPath = QDir::homePath()+"/EasyApps/"+applicationsName+"/";
+        iniPath = QDir::homePath()+"/.config/EasyApps/"+applicationsName+"/";
         helpPath.setPath(iniPath);
         if (!helpPath.exists()) {
             helpPath.mkpath(iniPath);
@@ -355,7 +355,7 @@ QString findTrashPath(QString newFileName /* filename to create a new file - wit
 	QString fileName = file.filePath();
 	QDir dir(file.path());
 	QString path(dir.canonicalPath()); // symlinks berücksichtigen
-	if ( (path.at(1) == ':') | (path.at(1) == '/') ) {  // System mit z.B. 'C:\xxxx oder //net/xxx 
+	if ( (path.at(1) == ':') | (path.at(1) == '/') ) {  // System mit z.B. 'C:\xxxx oder //net/xxx
 		return path.left(2)+"/";
 	} else {
 		if ( createFile(fileName) ) {
@@ -369,7 +369,7 @@ QString findTrashPath(QString newFileName /* filename to create a new file - wit
 QString createTrashPath(QString fileName,QString trashName) {
 // suche und evtl. erzeuge einen Ordner als "Papierkorb" der auf jedem Datenträger nur einmal vorkommen sollte
 // bei Unix/Linux o.Ä. wird ja alles in einer Ordnerstruktur unter / angelegt und eine Unterscheidung
-// nach verschiedenen Laufwerken nicht sofort möglich. Deshalb wird versucht eine Datei durch umbenennen 
+// nach verschiedenen Laufwerken nicht sofort möglich. Deshalb wird versucht eine Datei durch umbenennen
 // in den möglichen Ordner zu verschieben.
 	QString trashPath = findTrashPath(fileName)+trashName;
 	QDir dir(trashPath);
@@ -460,13 +460,13 @@ QString strRepeat(QString zeichen, int n ){
 	QString result = "";
 	for (int i = 0; i < n; i++)
 		result += zeichen;
-	return result;	
+	return result;
 }
 QString stringFromList(QStringList list, QString trenn, int start ){
 	QString result;
 	for (int i = start; i < list.count(); i++) {
 		if (i != start) result += trenn;
-		result += list[i]; 
+		result += list[i];
 	}
 	return result;
 }
